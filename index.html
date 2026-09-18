@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+   </header> 
+
+   <main>
+    <section class="hero" id="home">
+        <h1>My Frontend AI Helper App, <span>ENDI</span></h1>
+
+        <p>
+            With ENDI AI as your Frontend Web development assistant, you can get helpful suggestions in building your next project!
+            ENDI can be used for HTML, CSS, Javascript, Bootstrap or React. 
+            It can also help review code, look for bugs and assist in design.
+        </p>
+
+        <button class="helpBtn">Try AI Helper!</button>
+    </section>
+
+    <section class="cards" id="cards">
+
+        <p>With ENDI AI you can get:</p>
+
+        <div class="card">
+            <h2>Help with Code!</h2>
+            <p>Generate code easier and faster</p>
+        </div>
+
+        <div class="card">
+            <h2>Debugging and Code Review </h2>
+            <p>Make sure your code is clean and free of pesky bugs</p>
+        </div>
+
+        <div class="card">
+            <h2>Design Ideas</h2>
+            <p>Get unique and beautiful design ideas for CSS</p>
+        </div>
+    </section>
+
+
+<section class="helpForm">
+    <form id="helperForm">
+
+        <label for="topic">What is your question about?"</label>
+        <input type="text" id="topic"  placeholder="HTML, CSS, JavaScript, React...">
+
+       <label for="question">Question</label>
+        <textarea id="question"  placeholder="What's your question?" ></textarea>
+
+        <button type="submit" class="submitBtn">Submit</button>
+
+        <div class="aiResponse">
+            <label for="response">Response</label>
+        <textarea id="response" placeholder="AI response" readonly></textarea>
+        </div>
+
+    </form>
+
+</section>
+
+   </main>
+
+   <footer>
+    &Copyright 2026
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

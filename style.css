@@ -1,0 +1,230 @@
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: lightgreen;
+color: green;
+
+}
+
+/*NAVBAR*/
+header {
+color: darkgreen;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding: 25px 10%;
+    text-align: center;
+}
+
+.navbar a {
+ text-decoration: none; 
+ color: #33553b; 
+ font-weight: bold; 
+ transition: 0.3s; 
+ }
+ 
+ .navbar a:hover { 
+ color: #5bdb7b; 
+ }
+
+
+
+ /*HERO SECTION*/
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 { 
+    max-width: 900px; 
+    font-size: 55px; 
+    line-height: 1.2; 
+    margin-bottom: 25px; 
+} 
+
+.hero h1 span { 
+color: #014c17;
+ } 
+     
+.hero p { 
+        max-width: 750px; 
+        font-size: 18px; 
+        margin-bottom: 30px; 
+    }
+
+.helpBtn {
+ padding: 14px 28px; 
+border: none; 
+border-radius: 8px; 
+background-color: #014005; 
+color: white; 
+font-size: 16px; 
+font-weight: bold; 
+cursor: pointer; 
+transition: 0.3s; 
+}
+
+.helpBtn:hover { 
+    background-color: #42b86f;
+     transform: translateY(-2px);
+     }
+
+     
+/*CARDS*/
+.cards { 
+    padding: 70px 8%; 
+    text-align: center; 
+} 
+
+.cards > p { 
+font-size: 25px; 
+font-weight: bold;
+ margin-bottom: 35px; 
+} 
+
+.card { 
+    display: inline-block; 
+    vertical-align: top; 
+    width: 280px; 
+    min-height: 210px; 
+    margin: 10px; 
+    padding: 30px 25px;
+     background-color: #ffffff;
+      border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+transition: 0.3s; 
+}
+
+.card:hover { 
+    transform: translateY(-7px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+} 
+
+.card h2 { 
+    color: #5bdb81; 
+    font-size: 22px; 
+    margin-bottom: 15px; 
+} 
+
+.card p { 
+    color: #556659; 
+}
+
+
+
+
+/* AI HELPER SECTION */ 
+.helper-section {
+     padding: 70px 20px;
+      background-color: #eae8ff; 
+    } 
+
+    /* FORM */
+     #helperForm {
+         max-width: 650px;
+          margin: 0 auto; 
+          padding: 40px; 
+          background-color: #ffffff; 
+          border-radius: 12px; 
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+        } 
+        #helperForm > label, 
+        .aiResponse label 
+        { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: bold; 
+        } 
+        
+        #helperForm input, 
+        #helperForm textarea {
+             width: 100%;
+            padding: 13px;
+               margin-bottom: 20px;
+                border: 1px solid #cccccc;
+                 border-radius: 7px;
+                  font-size: 16px; 
+                  font-family: inherit; 
+                  outline: none; 
+                  transition: 0.3s; 
+                } 
+                
+#helperForm input:focus, #helperForm textarea:focus { 
+border-color: #5bdb68;
+box-shadow: 0 0 5px rgba(91, 219, 136, 0.25);
+} 
+                     
+#helperForm textarea { 
+min-height: 130px; 
+resize: vertical;
+} 
+                     
+/* SUBMIT BUTTON */ 
+.submitBtn { 
+    width: 100%; 
+    padding: 14px;
+     border: none;
+      border-radius: 7px;
+       background-color: #5bdb77; 
+       color: rgb(255, 255, 255); 
+       font-size: 16px; 
+       font-weight: bold;
+        cursor: pointer; 
+        transition: 0.3s; 
+    }
+    
+    .submitBtn:hover { 
+        background-color: #42b873; 
+    } 
+    
+    /* AI RESPONSE */ 
+    .aiResponse {
+         margin-top: 30px; 
+        }
+        
+        #response { 
+            background-color: #f5f5ff; 
+            min-height: 150px; 
+        } 
+        
+        /* FOOTER */ 
+        footer { 
+            padding: 25px;
+             text-align: center;
+              background-color: #253a24;
+               color: white; 
+            } 
+            
+            /* MOBILE RESPONSIVENESS */ 
+            @media (max-width: 700px) { 
+                .navbar { justify-content: center; 
+                    gap: 20px; padding: 18px; } 
+                    .hero { padding: 50px 20px; } 
+                    .hero h1 { font-size: 40px; } 
+                    .hero p { font-size: 16px; } 
+                    .card { display: block; 
+                        width: 100%; 
+                        max-width: 350px; 
+                        margin: 15px auto; } 
+                        #helperForm { padding: 25px; } }
+
